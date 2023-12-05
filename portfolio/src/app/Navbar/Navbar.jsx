@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link'
 import React, { useState } from 'react'
-import NavLink from './NavLink';
+import NavLink from './Navlink.js';
 import { Icon } from '@iconify/react';
 import MenuOverlay from './MenuOverlay';
 

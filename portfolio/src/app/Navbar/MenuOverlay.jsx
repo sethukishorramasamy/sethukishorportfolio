@@ -1,5 +1,5 @@
 import React from 'react'
-import NavLink from './NavLink';
+import NavLink from './Navlink.js';
 const MenuOverlay = ({ links }) => {
     return (
         <ul className='flex flex-col mb-5 pl-5'

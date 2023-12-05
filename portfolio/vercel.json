@@ -2,6 +2,9 @@
     "build": {
         "env": {
             "NEXT_VERSION": "latest"
+        },
+        "config": {
+            "next": "13.5.6"
         }
     }
 }
