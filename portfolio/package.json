@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "clean": "rm -rf .next",
     "dev": "next dev",
-    "build": "next build",
+    "prebuild": "echo 'Running tasks before build...'",
+    "build": "npm run clean && npm run prebuild && next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "next build"
+    "lint-fix": "eslint --fix .",
+    "vercel-build": "npm run clean && npm run prebuild && next build"
   },
   "dependencies": {
     "@coreui/react": "^4.10.1",
