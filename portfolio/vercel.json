@@ -6,5 +6,15 @@
         "config": {
             "next": "13.5.6"
         }
-    }
+    },
+    "version": 2,
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/node",
+            "config": {
+                "packageManager": "npm"
+            }
+        }
+    ]
 }
